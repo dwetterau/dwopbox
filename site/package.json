@@ -1,7 +1,7 @@
 {
   "name": "HackTX",
   "dependencies": {
-    "express": "*",
+    "express": "3.X",
     "pg": "*",
     "q": "*",
     "connect": "*"

@@ -22,7 +22,8 @@ peer.on('open', function(id) {
 });
 peer.on('connection', addConnection);
 
-var BLOCK_SIZE = 512;
+// 1MB blocks
+var BLOCK_SIZE = 1024 * 1024;
 
 var state = {
   others: [],
@@ -233,7 +234,7 @@ function masterAddedFile(file, file_id) {
   finished_files[file_id] = true;
 }
 
-var DELAY = 120;
+var DELAY = 0;
 
 var RETRY_LIMIT = 100;
 var retry_limits = {};
